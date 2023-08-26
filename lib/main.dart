@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
         ),
         backgroundColor: Colors.black87,
         body: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
             child: Form(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -82,19 +82,19 @@ class _HomeState extends State<Home> {
                     style: const TextStyle(color: Colors.white, fontSize: 25.0),
                     controller: pesoController,
                     validator: (String? value) {
-                      return "Insira seu Peso!";
+                      return "Insira seu peso!";
                     },
                   ),
                   TextFormField(
                     keyboardType: TextInputType.number,
                     decoration: const InputDecoration(
-                        labelText: "Altura (CM)",
+                        labelText: "Altura (cm)",
                         labelStyle: TextStyle(color: Colors.white)),
                     textAlign: TextAlign.center,
                     style: const TextStyle(color: Colors.white, fontSize: 25.0),
                     controller: alturaController,
                     validator: (String? value) {
-                      return "Insira sua Altura!";
+                      return "Insira sua altura!";
                     },
                   ),
                   Padding(
